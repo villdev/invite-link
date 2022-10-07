@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="icon" href="/favicon.png" />
+    <title>Cohesive: Invitation Link</title>
+  </head>
+  <style>
+    * {
+      text-rendering: optimizeLegibility;
+      box-sizing: border-box;
+      word-break: break-word;
+      margin: 0;
+      -webkit-font-smoothing: antialiased;
+      font-family: Inter, -apple-system, BlinkMacSystemFont, sans-serif;
+      font-size: 16px;
+      line-height: 24px;
+      overscroll-behavior: none;
+      color: #e5e5e5;
+    }
+    body {
+      width: 100vw;
+      height: 100vh;
+      background: #15191f;
+      overflow: hidden;
+      padding: 80px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .invite-content {
+      border: 1px solid rgba(255, 255, 255, 0.2);
+      border-radius: 10px;
+      padding: 2rem;
+      max-width: 618px;
+      background: #12151a;
+    }
+    .invite__header {
+      margin-bottom: 12px;
+    }
+    .invite__subtitle {
+      margin-bottom: 30px;
+    }
+    .invite__link,
+    .invite__link-text {
+      color: #5297ff;
+    }
+    .invite__by {
+      margin-top: 30px;
+    }
+  </style>
+  <body>
+    <div class="invite-content">
+      <div class="invite__text">
+        <p class="invite__header">👋 Hello team!</p>
+        <p class="invite__subtitle">
+          Join the getcohesive org on Cohesive — a modern development platform
+          for fast moving teams.
+        </p>
+      </div>
+      <a
+        target="_blank"
+        rel="noopener"
+        class="invite__link"
+        href="http://localhost:3000/login?source=invite&amp;invite_id=tempId&amp;gitProvider=0"
+        ><p class="invite__link-text">Accept invitation</p></a
+      >
+      <p class="invite__by">— @Shobhit Kuruvilla</p>
+    </div>
+  </body>
+</html>
